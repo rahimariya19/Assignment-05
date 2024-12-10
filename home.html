@@ -1,73 +1,125 @@
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">  
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@1.19.0/dist/full.css" rel="stylesheet">  
-    <title>Donate Bangladesh</title>  
-    <style>  
-        body {  
-            background-color: #f9fafb;  
-        }  
-    </style>  
-</head>  
-<body class="flex flex-col items-center mt-9 mb-9 ml-36">  
-    <header class="w-full flex justify-between items-center bg-white p-4 shadow-lg rounded-lg">  
-        <h1 class="text-xl font-bold">Donate Bangladesh</h1>  
-        <div class="text-lg font-semibold">5500 BDT</div>  
-    </header>  
+<!DOCTYPE html>
+<html lang="en">
 
-    <nav class="w-full mt-5 flex justify-around bg-white p-4 rounded-lg shadow-lg">  
-        <a href="#" class="text-lg font-semibold">Donation</a>  
-        <a href="#" class="text-lg font-semibold">History</a>  
-    </nav>  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
 
-    <main class="w-full mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">  
-        <!-- Donation Card 1 -->  
-        <div class="card bg-base-100 shadow-lg rounded-lg">  
-            <figure><img src="https://via.placeholder.com/400x200" alt="Flood at Noakhali" class="rounded-t-lg" /></figure>  
-            <div class="card-body">  
-                <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>  
-                <p>The recent floods in Noakhali have caused significant damage to homes and infrastructure...</p>  
-                <div class="form-control">  
-                    <input type="number" placeholder="Write Donation Amount" class="input input-bordered" />  
-                </div>  
-                <div class="card-actions justify-end">  
-                    <button class="btn btn-primary">Donate Now</button>  
-                </div>  
-            </div>  
-        </div>  
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/ffbc3a38a5.js" crossorigin="anonymous"></script>
 
-        <!-- Donation Card 2 -->  
-        <div class="card bg-base-100 shadow-lg rounded-lg">  
-            <figure><img src="https://via.placeholder.com/400x200" alt="Flood Relief in Feni" class="rounded-t-lg" /></figure>  
-            <div class="card-body">  
-                <h2 class="card-title">Donate for Flood Relief in Feni, Bangladesh</h2>  
-                <p>The recent floods in Feni have devastated local communities, leading to severe disruption and loss...</p>  
-                <div class="form-control">  
-                    <input type="number" placeholder="Write Donation Amount" class="input input-bordered" />  
-                </div>  
-                <div class="card-actions justify-end">  
-                    <button class="btn btn-primary">Donate Now</button>  
-                </div>  
-            </div>  
-        </div>  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
-        <!-- Donation Card 3 -->  
-        <div class="card bg-base-100 shadow-lg rounded-lg">  
-            <figure><img src="https://via.placeholder.com/400x200" alt="Aid for Injured in Quota Movement" class="rounded-t-lg" /></figure>  
-            <div class="card-body">  
-                <h2 class="card-title">Aid for Injured in the Quota Movement</h2>  
-                <p>The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals...</p>  
-                <div class="form-control">  
-                    <input type="number" placeholder="Write Donation Amount" class="input input-bordered" />  
-                </div>  
-                <div class="card-actions justify-end">  
-                    <button class="btn btn-primary">Donate Now</button>  
-                </div>  
-            </div>  
-        </div>  
-    </main>  
-</body>  
+    <style>
+        .font-lexend{
+            font-family: "lexend", sans-serif;
+        }
+    </style>
+
+
+</head>
+
+<body class="font-lexend">
+
+    <header class="container mx-auto  w-full flex justify-between items-center bg-[#F9F7F3] p-4 rounded-lg">  
+        <div>
+            <button id="btn-blog" class="btn text-xl	font-semibold text-[#111111] bg-[#B4F461] px-6 py-3 rounded hidden">Blog</button>
+            <button id="btn-home" class="btn text-xl	font-semibold text-[#111111] bg-[#B4F461] px-6 py-3 rounded ">Home</button>
+
+
+        </div>
+
+        <div class="flex flex-row">
+            <span><img src="./assets/logo.png" alt=""></span>
+            <h1 class="text-xl	font-semibold text-[#111111] p-7">Donate Bangladesh</h1>  
+
+        </div>
+
+        <div class="flex flex-row gap-2">
+            <span><img src="./assets/coin.png" alt=""></span>
+            <div class="text-xl	font-medium	 text-[#111111B3]">5500 BDT</div>  
+
+        </div>
+    </header> 
+
+    <main>
+        <section class=" mt-10">
+             <div class="container mx-auto">
+                <h1 class="text-[#111111] text-4xl	font-extrabold mb-8">Important FAQ</h1>
+             </div>
+
+            <div class="container mx-auto ">
+                <div class="collapse collapse-arrow border">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title text-2xl text-[#111111] font-bold">What is the Document Object Model (DOM)?    </div>
+                    <div class="collapse-content">
+                      <p class="text-lg font-normal	 text-[#111111B3]">The Document Object Model (DOM) is a programming interface that represents a web document as a tree of objects, allowing developers to access and manipulate HTML or XML content, structure, and styles dynamically, typically using JavaScript.</p>
+                    </div>
+                  </div>
+
+        
+        
+                  <div class="collapse collapse-arrow border">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-2xl text-[#111111] font-bold">How do you select an element from the DOM?  </div>
+                    <div class="collapse-content">
+                      <p class="text-lg font-normal	 text-[#111111B3]">To select an element from the DOM in JavaScript, you can use several methods: document.getElementById('id') selects an element by its ID, document.getElementsByClassName('class') selects elements by their class name, document.getElementsByTagName('tag') selects elements by their tag name, document.querySelector('selector') selects the first matching element using a CSS selector, and document.querySelectorAll('selector') selects all matching elements.</p>
+                    </div>
+                  </div>
+
+
+        
+                  <div class="collapse collapse-arrow border">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-2xl text-[#111111] font-bold">What is event delegation in the context of the DOM, and why is it useful?
+
+                    </div>
+                    <div class="collapse-content">
+                      <p class="text-lg font-normal	 text-[#111111B3]">Event delegation is a technique in the DOM where a single event listener is attached to a parent element instead of individual child elements. When an event occurs on a child, it bubbles up to the parent, allowing the parent to handle the event. This is useful because it reduces memory usage, improves performance, and simplifies code maintenance by minimizing the number of event listeners needed.</p>
+                    </div>
+                  </div>
+
+
+        
+                  <div class="collapse collapse-arrow border">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-2xl text-[#111111] font-bold">How do you manipulate an element's attributes and styles using the DOM?</div>
+                    <div class="collapse-content">
+                      <p class="text-lg font-normal	 text-[#111111B3]">You can manipulate an element's attributes and styles in the DOM using JavaScript. To change attributes, use element.setAttribute('attribute', 'value') or directly access properties like element.src or element.href. To change styles, use element.style.property = 'value', for example, element.style.color = 'red'.</p>
+                    </div>
+                  </div>
+
+
+
+
+                  <div class="collapse collapse-arrow border">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-2xl text-[#111111] font-bold">What is the role of the dataset property in the DOM, and how can it be used to manage custom data attributes?</div>
+                    <div class="collapse-content">
+                      <p>The dataset property in the DOM allows you to access and manage custom data attributes (prefixed with data-). Each attribute is available as a camelCase property on the dataset object. For example, data-user-id can be accessed as element.dataset.userId. You can get or set values easily using this property.</p>
+                    </div>
+                  </div>
+
+        
+                  
+                  
+            </div>
+        </section>
+    </main>
+
+
+    
+
+    <!-- <footer class="footer footer-center bg-[#F9F7F3] text-base-content rounded p-10 mt-24"> -->
+    <footer class="footer footer-center bg-[#F9F7F3]  rounded p-10 mt-24"></footer>
+
+    <script src="./js/index.js"></script>
+
+
+</body>
+
 </html>

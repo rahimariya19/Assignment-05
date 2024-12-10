@@ -1,20 +1,3 @@
-// const donateButton=document.getElementById('donate');
-// donateButton.addEventListener('click',function() {
-//     const addAmount =document.getElementById('amount').value;
-//     if(isNaN(addAmount) || addAmount <=0){
-//         console.log('Congrates! You Have Donated for HumanKind Successfully')
-
-//         const balance = document.getElementById('amount-balance').innerText;
-
-//         const newBalance = balance + addAmount;
-       
-//     }
-//     else{
-//         alert('Invalid Donation Amount');
-//     }
-
-// });
-
 
 //1st card
 document.getElementById('donateButton').addEventListener('click', function() {  
@@ -61,7 +44,6 @@ document.getElementById('donateBtn').addEventListener('click', function() {
            
 
     amountDisplay.textContent = `${donationValue.toFixed(2)} BDT`;
-    newBalance=amountDisplay +donationValue;
     
 
 });  
@@ -88,10 +70,6 @@ document.getElementById('donate').addEventListener('click', function() {
 
 });
 
-    
-
-
-
 
 document.getElementById('btn-blog')
 .addEventListener('click',function() {
@@ -104,4 +82,29 @@ document.getElementById('btn-home')
 
     window.location.href = './index.html'
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
 

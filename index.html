@@ -50,9 +50,9 @@
     <main>
         <section class="mt-16 ">
             <!-- button section starts -->
-             <div class="flex justify-center gap-3 bg-[#FFFFFF]">
+             <div id="donation-tab" class="flex justify-center gap-3 bg-[#FFFFFF]">
                 <button class="text-[#111111] text-xl	font-semibold bg-[#B4F461] px-6 py-3 rounded">Donation</button>
-                <button class="text-[#111111B3] text-xl font-medium px-6 py-3 border border-solid rounded">History</button>
+                <button id="history-tab" class="text-[#111111B3] text-xl font-medium px-6 py-3 border border-solid rounded">History</button>
              </div>
         </section>
     <!-- button section ends -->
@@ -191,6 +191,16 @@
     </main>
 
     <footer class="footer footer-center bg-[#F9F7F3]  rounded p-10 mt-24"></footer>
+
+
+      <!-- History Section -->
+      <div id="history-section"
+      class="hidden">
+      
+      <div id="history-list" class="grid grid-cols-2 gap-3">
+
+      </div>
+  </div>
 
     <script src="./js/index.js"></script>
 

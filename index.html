@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/ffbc3a38a5.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        .font-lexend{
+            font-family: "lexend", sans-serif;
+        }
+    </style>
+
+
+</head>
+
+<body class="font-lexend ">
+
+    <!-- <header class="w-full flex justify-between items-center bg-[#F9F7F3] p-4 shadow-lg rounded-lg">   -->
+    <header class="container mx-auto  w-full flex justify-between items-center bg-[#F9F7F3] p-4 rounded-lg">  
+        <div>
+            <a class="text-xl	font-semibold text-[#111111] bg-[#B4F461] px-6 py-3 rounded" href="">Blog</a>
+            <!-- <button class="text-xl	font-semibold text-[#111111] bg-[#B4F461] px-6 py-3 rounded">Blog</button> -->
+
+
+        </div>
+
+        <div class="flex flex-row">
+            <span><img src="./assets/logo.png" alt=""></span>
+            <h1 class="text-xl	font-semibold text-[#111111] p-7">Donate Bangladesh</h1>  
+
+        </div>
+
+        <div class="flex flex-row gap-2">
+            <span><img src="./assets/coin.png" alt=""></span>
+            <div class="text-xl	font-medium	 text-[#111111B3]">5500 BDT</div>  
+
+        </div>
+    </header> 
+
+
+    <main>
+        <section class="mt-16 ">
+            <!-- button section starts -->
+             <div class="flex justify-center gap-3 bg-[#FFFFFF]">
+                <button class="text-[#111111] text-xl	font-semibold bg-[#B4F461] px-6 py-3 rounded">Donation</button>
+                <button class="text-[#111111B3] text-xl font-medium px-6 py-3 border border-solid rounded">History</button>
+             </div>
+        </section>
+    <!-- button section ends -->
+
+    <section class="bg-[#FFFFFF] mt-10">
+        <!-- donation section starts -->
+        <div class="container mx-auto  grid grid-cols-1 gap-5 lg:grid-cols-2 justify-between border rounded-lg">
+
+            <div>
+                <img class="rounded border-2 border-dashed" src="./assets/noakhali.png" alt="">
+            </div>
+
+            <!-- 2nd div -->
+            <div>
+                <div class="mb-5">
+                    <button class="btn">
+                        <span><img src="./assets/coin.png" alt=""></span>
+                    <div id="account-balance" class="stat-value text-base	font-normal	 ">9400</div>
+                    </button>
+                </div>
+
+                <div>
+                    <h1 class="text-xl text-[#111111] font-bold mb-4">Donate for Flood at Noakhali, Bangladesh</h1>
+                    <p class="text-base font-light text-[#111111B3] mb-4"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+
+                    <!-- new -->
+                    <input type="number" id="internet"
+                        class="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                        placeholder="Write Donation Amount" />
+                    <p id="internet-error" class="text-red-500 text-xs mt-1 hidden">
+                        ⚠️ Invalid amount!
+                    </p>
+                    <!-- new -->
+                    <!-- Donate Now starts -->
+                    
+
+                    <button id="donate" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg text-xl	font-semibold text-[#111111] bg-[#B4F461] px-6 py-3 rounded-md w-full">Donate Now</button>
+
+                    <!-- Donate Now starts -->
+                </div>
+                
+            </div>
+
+            
+        </div>
+        <!-- donation section ends -->
+    </section>
+
+    </main>
+
+</body>
+
+</html>

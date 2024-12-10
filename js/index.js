@@ -1,4 +1,5 @@
 
+
 //1st card
 document.getElementById('donateButton').addEventListener('click', function() {  
     const donationInput = document.getElementById('donationAmount');  
@@ -80,9 +81,8 @@ document.getElementById('btn-blog')
 document.getElementById('btn-home')
 .addEventListener('click',function() {
 
-    window.location.href = './index.html'
+    window.location.href = './index.html';
 });
-
 
 
 

@@ -1,87 +1,65 @@
+// 1st card
 
+let totalBalance = 0;  
 
-//1st card
 document.getElementById('donateButton').addEventListener('click', function() {  
-    const donationInput = document.getElementById('donationAmount');  
-    const amountDisplay = document.getElementById('amount');  
-    const donationValue = parseFloat(donationInput.value);  
+    const donationInput = document.getElementById('donationAmount').value;  
+    const donationAmount = parseFloat(donationInput);  
 
-    if (isNaN(donationValue) || donationValue <= 0) {  
-        console.log('Congrates! You Have Donated for HumanKind Successfully')
-
-        // const balance=document.getElementById('amount').innerText;
-        
-        // const addMoneyNumber= parseFloat(donationInput);
-        // const balanceNumber=parseFloat(amount);
-        // const newBalance=addMoneyNumber + balanceNumber ;
-        // console.log(newBalance);
-
-        // document.getElementById('amount').innerText=newBalance;
-
+    if (donationAmount > 0) {  
+        totalBalance += donationAmount;  
+        document.getElementById('balance').innerText = totalBalance.toFixed(2);  
+        alert('Congratulations! Your donation of ' + donationAmount + ' BDT has been added. You Have Donated for HumanKind Successfully ');  
+    } else {  
+        alert('Invalid Donation Amount');  
     }  
-    else{
-                alert('Invalid Donation Amount');
-             }
-           
 
-    amountDisplay.textContent = `${donationValue.toFixed(2)} BDT`;
-
-});  
-
-//2nd card
-document.getElementById('donateBtn').addEventListener('click', function() {  
-    const donationInput = document.getElementById('donationAccount');  
-    const amountDisplay = document.getElementById('account');  
-    const donationValue = parseFloat(donationInput.value);  
-
-    if (isNaN(donationValue) || donationValue <= 0) {  
-        console.log('Congrates! You Have Donated for HumanKind Successfully')
-
-
-    }  
-    else{
-                alert('Invalid Donation Amount');
-             }
-           
-
-    amountDisplay.textContent = `${donationValue.toFixed(2)} BDT`;
-    
-
-});  
-
-
-//3rd card
-document.getElementById('donate').addEventListener('click', function() {  
-    const donationInput = document.getElementById('quota-donate-amount');  
-    const amountDisplay = document.getElementById('total-amount');  
-    const donationValue = parseFloat(donationInput.value);  
-
-    if (isNaN(donationValue) || donationValue <= 0) {  
-        console.log('Congrates! You Have Donated for HumanKind Successfully')
-
-
-    }  
-    else{
-                alert('Invalid Donation Amount');
-             }
-           
-
-    amountDisplay.textContent = `${donationValue.toFixed(2)} BDT`;
-    
-
-});
+    document.getElementById('donationAmount').value = '';  
+}); 
 
 
 
 
 
+// 2nd card 
+
+let totalAmount = 660;  
+
+        document.getElementById('donateButtonNew').addEventListener('click', function() {  
+            const donationValue = document.getElementById('donationInput').value;  
+            const donationAmount = parseFloat(donationValue);  
+
+            if (donationAmount > 0) {  
+                totalAmount += donationAmount;  
+                document.getElementById('currentBalance').innerText = totalAmount.toFixed(2);  
+                alert('Congratulations! Your donation of ' + donationAmount + ' BDT has been added.You Have Donated for HumanKind Successfully ');  
+            } else {  
+                alert('Invalid Donation Amount');  
+            }  
+
+            document.getElementById('donationInput').value = '';  
+        });  
+
+        // 3rd card
 
 
 
+        let currentBalance = 2400;  
 
+        document.getElementById('donateNowButton').addEventListener('click', function() {  
+            const donationValue = document.getElementById('donationAmountInput').value;  
+            const donationAmount = parseFloat(donationValue);  
 
+            if (donationAmount > 0) {  
+                currentBalance += donationAmount;  
+                document.getElementById('totalFunds').innerText = currentBalance.toFixed(2);  
+                alert('Congratulations! Your donation of ' + donationAmount + ' BDT has been added. You Have Donated for HumanKind Successfully');  
+            } else {  
+                alert('Invalid Donation Amount');  
+            }  
 
-
+            document.getElementById('donationAmountInput').value = '';  
+        });  
 
 
 
